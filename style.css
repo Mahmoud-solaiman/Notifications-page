@@ -1,0 +1,159 @@
+* {
+    box-sizing:border-box;
+    font-family:'Plus Jakarta Sans';
+    margin:0;
+    padding:0;
+}
+
+.container {
+    width:100%;
+    height:100vh;
+    background:hsl(210, 60%, 98%);
+    display:flex;
+    justify-content: center;
+}
+
+.notifications-page {
+    background:#fff;
+    padding:20px 30px 0 30px;
+    width:56%;
+    border-radius:20px;
+    box-shadow:0 0 15px #eeeeee;
+    height:fit-content;
+    margin-top:20px;
+}
+
+header {
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.notifications-title {
+    font-size:1.3rem;
+    font-weight:800;
+    color:  hsl(224, 21%, 14%);
+}
+
+#notifications-counter {
+    font-size:1rem;
+    margin-left: 10px;
+    background-color:hsl(219, 85%, 26%);
+    color:#fff;
+    padding:2px 13px;
+    border-radius:8px;
+}
+
+#mark-all {
+    color: hsl(219, 12%, 42%);
+    cursor:pointer;
+    font-weight:500;
+}
+
+#mark-all:active {
+    color:hsl(219, 85%, 26%);
+}
+
+.messages-container {
+    padding-top:30px;
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+
+.unread-message, .read-message {
+    display:flex;
+    gap:20px;
+    align-items:center;
+    background-color:hsl(210, 60%, 98%);
+    border-radius:15px;
+    padding:12px 20px;
+}
+
+.avatar img {
+    width:45px;
+    height:45px;
+}
+
+.user {
+    font-size:1rem;
+    font-weight:800;
+    margin-right:3px;
+    color:hsl(224, 21%, 14%);
+    cursor:pointer;
+}
+
+.user:active {
+    color:hsl(219, 85%, 26%);
+}
+
+.action {
+    font-size:.9rem;
+    color:hsl(219, 12%, 42%);
+    font-weight:600;
+    margin-right:3px;
+}
+
+.tournament, .chess-club {
+    font-size:1rem;
+    font-weight:800;
+    color: hsl(219, 12%, 42%);
+    margin-right:6px;
+    cursor:pointer;
+}
+
+.tournament:active, .chess-club:active {
+    color:hsl(219, 85%, 26%);
+}
+
+.fa-circle {
+    font-size:.5rem;
+    color: hsl(1, 90%, 64%);
+}
+
+.time {
+    color:hsl(219, 14%, 63%);
+    font-size:.9rem;
+    margin-top:5px;
+    font-weight:600;
+}
+
+.chess-club {
+    color:hsl(219, 85%, 26%);
+}
+
+.gratitude-message {
+    margin-top:5px;
+    width:100%;
+    border:1px solid hsl(205, 33%, 90%);
+    padding:20px;
+    font-size:1rem;
+    font-weight:500;
+    color:hsl(219, 12%, 42%);
+    border-radius:10px;
+    cursor:pointer;
+}
+
+.gratitude-message:active {
+    background-color:hsl(205, 33%, 90%)
+}
+
+.read-message .avatar {
+    align-self:flex-start;
+}
+
+.read-message {
+    background:#fff;
+    position:relative;
+}
+
+.chess img {
+    width:45px;
+    height:45px;
+}
+
+.chess {
+    position:absolute;
+    right:4%;
+    top:10%;
+}

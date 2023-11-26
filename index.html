@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notifications Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800;900&family=Outfit:wght@400;700&family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <main class="notifications-page">
+            <header>
+                <div>
+                    <h1 class="notifications-title">
+                        Notifications
+                        <span id="notifications-counter">3</span>
+                    </h1>
+                </div>
+                <div>
+                    <p id="mark-all">Mark all as read</p>
+                </div>
+            </header>
+            <div class="messages-container">
+                <div class="unread-message">
+                    <div class="avatar">
+                        <img src="images/avatar-mark-webber.webp">
+                    </div>
+                    <div>
+                        <h3>
+                            <span class="user">Mark Webber</span>
+                            <span class="action">reacted to your recent post</span>
+                            <span class="tournament">My first tournament today!</span>
+                            <i class="fa-solid fa-circle"></i>
+                        </h3>
+                        <p class="time">1m ago</p>
+                    </div>
+                </div>
+                <div class="unread-message">
+                    <div class="avatar">
+                        <img src="images/avatar-angela-gray.webp">
+                    </div>
+                    <div>
+                        <h3>
+                            <span class="user">Angela Gray</span>
+                            <span class="action">followed you</span>
+                            <i class="fa-solid fa-circle"></i>
+                        </h3>
+                        <p class="time">5m ago</p>
+                    </div>
+                </div>
+                <div class="unread-message">
+                    <div class="avatar">
+                        <img src="images/avatar-jacob-thompson.webp">
+                    </div>
+                    <div>
+                        <h3>
+                            <span class="user">Jacob Thompson</span>
+                            <span class="action">has joined your group</span>
+                            <span class="chess-club">Chess Club</span>
+                            <i class="fa-solid fa-circle"></i>
+                        </h3>
+                        <p class="time">1 day ago</p>
+                    </div>
+                </div>
+                <div class="read-message">
+                    <div class="avatar">
+                        <img src="images/avatar-rizky-hasanuddin.webp">
+                    </div>
+                    <div>
+                        <h3>
+                            <span class="user">Rizky Hasanuddin</span>
+                            <span class="action">sent you a private message</span>
+                        </h3>
+                        <p class="time">5 day ago</p>
+                        <div class="gratitude-message">
+                            <p>
+                                Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and I'm already having lots of fun and improving my game.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="read-message">
+                    <div class="avatar">
+                        <img src="images/avatar-kimberly-smith.webp">
+                    </div>
+                    <div>
+                        <h3 class="kimberly-smith">
+                            <span class="user">Kimberly Smith</span>
+                            <span class="action">commented on your picture</span>
+                        </h3>
+                        <p class="time">1 week ago</p>
+                    </div>
+                    <div class="chess">
+                        <img src="images/image-chess.webp">
+                    </div>
+                </div>
+                <div class="read-message">
+                    <div class="avatar">
+                        <img src="images/avatar-nathan-peterson.webp">
+                    </div>
+                    <div>
+                        <h3>
+                            <span class="user">Nathan Peterson</span>
+                            <span class="action">reacted to your recent post</span>
+                            <span class="tournament">5 end-game strategies to increase your win rate</span>
+                        </h3>
+                        <p class="time">2 weeks ago</p>
+                    </div>
+                </div>
+                <div class="read-message">
+                    <div class="avatar">
+                        <img src="images/avatar-anna-kim.webp">
+                    </div>
+                    <div>
+                        <h3>
+                            <span class="user">Anna Kim</span>
+                            <span class="action">left the group</span>
+                            <span class="chess-club">Chess Club</span>
+                        </h3>
+                        <p class="time">2 weeks ago</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
